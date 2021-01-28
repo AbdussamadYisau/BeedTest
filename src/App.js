@@ -63,9 +63,8 @@ class PostAuctionPage extends Component {
     var user = this.state;
 
     axios
-      .post(`/auction`, this.state)
+      .post("https://damp-brushlands-44346.herokuapp.com/auction", this.state)
       .then((response) => {
-        console.log("fuck up");
         console.log(response);
         console.log(response.data);
         this.props.history.push("./AuctionList");

@@ -1,0 +1,6 @@
+[build]
+    functions = "functions"
+[[redirects]]
+    from ="https://damp-brushlands-44346.herokuapp.com/*"
+    to ="/.netlify/functions/:splat"
+    status = 200
